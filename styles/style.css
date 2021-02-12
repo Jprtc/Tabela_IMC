@@ -1,0 +1,64 @@
+body{
+    background-color: azure;
+}
+
+.logo {
+    width: 60%;
+    margin: auto;
+    padding: 4x;
+    font-size: 28px;
+    text-align: center;
+}
+
+.fontelogo {
+    font-size: 25px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: snow;
+}
+
+.imc{ 
+    
+    font-size: 25px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: rgb(255, 103, 103);
+
+}
+
+.cabecalho {
+    background-color: rgb(5, 52, 194);
+    color:silver;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 2px solid #ccc;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.me {
+    font-size: 22px;
+    position: absolute;
+    top: 40%;
+    right: 85%;
+    color: snow;
+}
+
+.conteudodapagina{
+    width: 70%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 2px 8px;
+}
+
+.cadastro{
+    margin: 20px;
+
+}
