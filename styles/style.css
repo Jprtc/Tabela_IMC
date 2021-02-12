@@ -10,6 +10,22 @@ body{
     text-align: center;
 }
 
+label{
+    display: block;
+}
+
+fieldset{
+    border:0;
+}
+
+input{
+    width: 100%;
+    margin: 12px;
+    padding: 6px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
 .fontelogo {
     font-size: 25px;
     padding: 15px;
@@ -43,9 +59,9 @@ body{
 }
 
 .me {
-    font-size: 22px;
+    font-size: 20px;
     position: absolute;
-    top: 40%;
+    top: 35%;
     right: 85%;
     color: snow;
 }
@@ -61,4 +77,66 @@ body{
 .cadastro{
     margin: 20px;
 
+}
+
+.conteudo{
+    display: flex;
+    width: 100%;
+}
+
+.nome{
+    width: 50%;
+}
+
+.peso{
+    margin-right: 5px;
+    width: 50%;
+}
+
+.altura{
+    width: 50%;
+}
+
+label{
+    font-weight: bold;
+    font-size: 18px;
+    color: blue;
+}
+
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: snow;
+    background-color:rgba(47, 47, 224, 0.932);
+    border-radius: 20px;
+    width: 140px;
+    height: 60px;
+}
+
+button:hover{
+    background-color: rgb(104, 75, 233);
+}
+
+table {
+    width: 100%;
+}
+
+th{background-color: rgb(18,77,255,0.86);
+    text-align: left;
+    color: snow;
+}
+
+.tabela_informacoes th, td{
+padding: 10px;
+border: 1px solid #ccc
+
+}
+
+td{
+    background-color: rgb(225, 248, 248);
+    text-align: left;
+}
+
+tr{
+    padding: 15px;;
+    border: 1px solid #ccc
 }

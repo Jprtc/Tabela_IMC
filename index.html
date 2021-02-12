@@ -7,6 +7,7 @@
     <title>Tabela_IMC</title>
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/icon.png">
 </head>
 <body>
     <header class="cabecalho">
@@ -26,11 +27,53 @@
         <h2>Cadastro</h2>
         <hr>
     </section>
-    
-    
 
+<form>
+
+    <fieldset>
+        <div class="nome">
+        <label for="nome">Nome:</label>
+        <input type="text" placeholder="nome" id="in_nome" maxlength="50" pattern="[A-Z,a-z]+">
+    </div>
+    </fieldset>
+
+    <section class="content">
+        <div class="peso">
+        <label for="peso">Peso:</label>
+        <input type="text" placeholder="peso" id="in_peso" onkeypress="return isNumberKey(event)" maxlength="5">
+        </div>
+
+        <div class="altura">
+        <label for="altura">Altura:</label>
+        <input type="text" placeholder="altura" id="in_altura" onkeypress="return isNumberKey(event)" maxlength="5" > 
+        </div>
+    </section>
+    <button id="cadastrar_pessoas">Cadastrar Pessoa(s)</button>
+
+</form>
+<br>
+
+    <section class="cadastro">
+
+        <h2>Cadastrados</h2>
+        <hr>
+        <table class="tabela_informacoes">
+        <tr>
+            <th>Nome</th>
+            <th>Peso(KG)</th>
+            <th>Altura(M)</th>
+        </tr>
+    </table>
+    </section>
+
+    <button id="calcular_imc">Calcular IMC</button>
 
 </main>    
+
+
+
+<script src="scripts/forminput.js"></script>
+<script src="scripts/onlynumbers.js"></script>
 
 </body>
 </html>
