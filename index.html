@@ -33,22 +33,22 @@
     <fieldset>
         <div class="nome">
         <label for="nome">Nome:</label>
-        <input type="text" placeholder="nome" id="in_nome" maxlength="50" pattern="[A-Z,a-z]+">
+        <input type="text" placeholder="Nome" id="in_nome" maxlength="50" pattern="[A-Z,a-z]+"> 
     </div>
     </fieldset>
 
     <section class="content">
         <div class="peso">
         <label for="peso">Peso:</label>
-        <input type="text" placeholder="peso" id="in_peso" onkeypress="return isNumberKey(event)" maxlength="5">
+        <input type="text" placeholder="Peso" id="in_peso" onkeypress="return isNumberKey(event)" maxlength="5">
         </div>
 
         <div class="altura">
         <label for="altura">Altura:</label>
-        <input type="text" placeholder="altura" id="in_altura" onkeypress="return isNumberKey(event)" maxlength="5" > 
+        <input type="text" placeholder="Altura" id="in_altura" onkeypress="return isNumberKey(event)" maxlength="5" > 
         </div>
     </section>
-    <button id="cadastrar_pessoas">Cadastrar Pessoa(s)</button>
+    <button id="cadastrar_pessoas">Cadastrar Pessoa</button>
 
 </form>
 <br>
@@ -57,16 +57,20 @@
 
         <h2>Cadastrados</h2>
         <hr>
-        <table class="tabela_informacoes">
+        <table class="tabela_informacoes" id="tabela_informacoes">
         <tr>
             <th>Nome</th>
             <th>Peso(KG)</th>
             <th>Altura(M)</th>
+            <th class="imc">IMC</th>
+            <th>Status</th>
         </tr>
     </table>
     </section>
 
-    <button id="calcular_imc">Calcular IMC</button>
+    <button id="calcular_imc">Calcular IMC</button> 
+
+    <button id="clear_table">Limpar Tabela</button>
 
 </main>    
 
@@ -74,6 +78,10 @@
 
 <script src="scripts/forminput.js"></script>
 <script src="scripts/onlynumbers.js"></script>
+<script src="scripts/dadosPessoa.js"></script>
+<script src="scripts/calculoImc.js"></script>
+<script src="scripts/clearTable.js"></script>
+
 
 </body>
 </html>
