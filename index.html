@@ -17,11 +17,11 @@
                 </h1>
                 <h2 class="me">João Pedro de Rossi</h2>
 
-
+                
             </div>
     </header>
 
-<main class="conteudodapagina">
+<main class="conteudodapagina"> 
 
     <section class="cadastro">
         <h2>Cadastro</h2>
@@ -40,12 +40,12 @@
     <section class="content">
         <div class="peso">
         <label for="peso">Peso:</label>
-        <input type="text" placeholder="Peso" id="in_peso" onkeypress="return isNumberKey(event)" maxlength="5">
+        <input type="text" placeholder="Peso" id="in_peso" onkeypress="return isNumberKey(event)" maxlength="4">
         </div>
 
         <div class="altura">
         <label for="altura">Altura:</label>
-        <input type="text" placeholder="Altura" id="in_altura" onkeypress="return isNumberKey(event)" maxlength="5" > 
+        <input type="text" placeholder="Altura" id="in_altura" onkeypress="return isNumberKey(event)" maxlength="4" data-format ="*.***" data-mask="" > 
         </div>
     </section>
     <button id="cadastrar_pessoas">Cadastrar Pessoa</button>
@@ -71,6 +71,7 @@
     <button id="calcular_imc">Calcular IMC</button> 
 
     <button id="clear_table">Limpar Tabela</button>
+    
 
 </main>    
 
@@ -81,6 +82,8 @@
 <script src="scripts/dadosPessoa.js"></script>
 <script src="scripts/calculoImc.js"></script>
 <script src="scripts/clearTable.js"></script>
+<script src="scripts/inputMask.js"></script>
+
 
 
 </body>

@@ -2,6 +2,8 @@ body{
     background-color: azure;
 }
 
+
+
 .logo {
     width: 60%;
     margin: auto;
@@ -74,6 +76,13 @@ input{
     box-shadow: 1px 2px 8px;
 }
 
+.conteudodapaginadark{
+    
+    background-color: black;
+    
+
+}
+
 .cadastro{
     margin: 20px;
 
@@ -114,7 +123,10 @@ button{
     border-radius: 20px;
     width: 140px;
     height: 60px;
+    font-weight: bold;
 }
+
+
 
 button:hover{
     background-color: rgb(233, 140, 140);
@@ -140,6 +152,7 @@ td{
     text-align: left;
 }
 
+
 tr{
     padding: 15px;;
     border: 1px solid #ccc
@@ -147,7 +160,17 @@ tr{
 
 #clear_table{
     position: absolute;
-    left: 70%;
+    left: 74%;
     border-radius: 100%;
     
+}
+
+.darkmodetoggle{
+
+    font-size: 15px;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    
+
 }
