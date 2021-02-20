@@ -18,46 +18,23 @@
 
         var pessoa = criarPessoa(tdNome.textContent, tdPeso.textContent, tdAltura.textContent);
 
-        
-        var imc = pessoa.calcularImcPorFavor();      
+        var imc = pessoa.calcularIMC();      
         tdImcResultado.textContent = imc.toFixed(2);
 
         var situacaoPessoa = pessoa.calcularSituacao(imc);
         tdImcSituacao.textContent = situacaoPessoa;
 
         
-    
-
-
-    //var peso = document.getElementById("in_peso");
-    //var altura = document.getElementById("in_altura");
-
-    //var getImcResult = document.getElementsByClassName("imc")[0];
-
-    
-
-    //var getImcResult = peso.value / (altura.value * altura.value);
-    //var resultadoimc
-    //resultadoimc = getImcResult.toFixed(2)
-    //alert(getImcResult)
-
-    
-    //var novaTabela =  '<td class = "imc">' + imc + '</td>'
-    
     }
 }
-    //var novaTabelaIMC =  '<tr class = "pessoa>' +
-    //'<td class ="imc">' + resultadoimc + '</td>' +
-    //'</tr>'
-
-    
-
-    // var tabelaimc = document.getElementsByClassName("tabela_informacoes")[0];
-    // tabelaimc.innerHTML = tabelaimc.innerHTML + novaTabela;
-
 
 
 var imc = document.getElementById("calcular_imc");
     imc.addEventListener("click", calcularTodosIMCS);
+
+
+
+
+
 
 

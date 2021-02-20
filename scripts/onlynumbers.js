@@ -7,5 +7,4 @@ function isNumberKey(evt){
 }
 
 
-
 //se precisar de decimais troque o IF por isso: if (charCode > 31 && (charCode != 46 &&(charCode < 48 || charCode > 57)))
