@@ -9,15 +9,19 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/icon.png">
 </head>
-<body>
+
+<body class="light-theme">
     <header class="cabecalho">
             <div class="logo">
+               
                 <h1 class="fontelogo">Calcular
                     <span class="imc">IMC</span>
                 </h1>
-                <h2 class="me">João Pedro de Rossi</h2>
-
-                
+               
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-de-rossi-tambasco-calazans-1b1867b7/" target="blank"> 
+                    <h2 class="me">João Pedro de Rossi</h2> 
+                </a>
+                                    
             </div>
     </header>
 
@@ -40,7 +44,7 @@
     <section class="content">
         <div class="peso">
         <label for="peso">Peso:</label>
-        <input type="text" placeholder="Peso" id="in_peso" onkeypress="return isNumberKey(event)" maxlength="4">
+        <input type="text" placeholder="Peso" id="in_peso" onkeypress="return isNumberKey(event)" maxlength="4"> <!-- essa função impede que caracteres não-numéricos sejam digitados na caixa.-->
         </div>
 
         <div class="altura">
@@ -75,6 +79,7 @@
 
 </main>    
 
+<button id="night-theme">Night-Theme</button>   
 
 
 <script src="scripts/forminput.js"></script>
@@ -83,7 +88,7 @@
 <script src="scripts/calculoImc.js"></script>
 <script src="scripts/clearTable.js"></script>
 <script src="scripts/inputMask.js"></script>
-
+<script src="scripts/darkThemeToggle.js"></script>
 
 
 </body>
