@@ -1,5 +1,3 @@
-
-
 function limparTabela(){
 
 var tableHeaderRowCount = 1;
@@ -9,8 +7,6 @@ for (var i = tableHeaderRowCount; i < rowCount; i++) {
     table.deleteRow(tableHeaderRowCount)
 }
     }
-
-
 
 
 var clearTable = document.getElementById("clear_table");

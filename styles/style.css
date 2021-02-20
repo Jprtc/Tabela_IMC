@@ -1,7 +1,33 @@
-body{
-    background-color: azure;
-}
+:root {
+    --azurekino: azure;
+    --richBlackForeground: #272729;
+    --whiteb: #f8f8f8;
+    --black: #222;
+    --msuGreen: #2D4739;
+    --gray: #eee;
+    --buttonColor: rgba(234,73,73,1);
+    --snowWhite: #fffafa;
+    --cabecalho: rgb(5, 52, 194);
+    --trueBlack: #000;
+    --deepBlue: #12138e;
+    --buttonColorDark: rgba(148,7,7,1);
+    --buttonHoverLight: rgb(233, 140, 140);
+    --buttonHoverDark: rgb(255, 11, 11);
+    --conteudoPaginaLight: white;
+    --conteudoPaginaDark: #ffffff26;
+    --normalBlueTable: rgb(5,52,194,1);
+    --kinoDeepBlue: rgb(9,42,142,1);
+    --corLabelLight: blue;
+    --corLabelDark:white;
+    --corTdLight: rgb(225, 248, 248);
+    --corTdDark: rgba(144,206,206,1);
+  }
 
+
+body{
+    background: var(--navBG);
+
+}
 
 
 .logo {
@@ -32,7 +58,7 @@ input{
     font-size: 25px;
     padding: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: snow;
+    color: var(--fonteLogo);
 }
 
 .imc{ 
@@ -46,18 +72,19 @@ input{
 }
 
 .cabecalho {
-    background-color: rgb(5, 52, 194);
-    color:silver;
+    background-color:var(--header);
+    color:var(--fonteLogo);
     width: 100%;
     height: 70px;
     box-sizing: border-box;
     position: relative;
-    border-bottom: 2px solid #ccc;
+    /*border-bottom: 2px solid #ccc; */
 }
 
 *{
     padding: 0;
     margin: 0;
+    transition: background-color 0.8s ease, color 1s ease;
 }
 
 .me {
@@ -65,23 +92,20 @@ input{
     position: absolute;
     top: 35%;
     right: 90%;
-    color: snow;
+    color: var(--fonteLogo);
+    
+    
 }
 
 .conteudodapagina{
     width: 70%;
     margin: 10px auto;
     padding: 20px;
-    background-color: white;
+    background-color: var(--contentBG);
     box-shadow: 1px 2px 8px;
 }
 
-.conteudodapaginadark{
-    
-    background-color: black;
-    
 
-}
 
 .cadastro{
     margin: 20px;
@@ -113,19 +137,30 @@ input{
 label{
     font-weight: bold;
     font-size: 18px;
-    color: blue;
+    color: var(--corLabel);
 }
 
 button{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: snow;
-    background-color:rgba(234,73,73,1);
+    background-color: var(--botaoCor);
     border-radius: 20px;
     width: 140px;
     height: 60px;
     font-weight: bold;
 }
 
+ #night-theme{
+    top: 0.5%;
+    left :80%;
+    position: absolute;
+    width: 5%;
+    background-color: var(--botaoCor);
+}
+
+#night-theme:hover{
+    background-color: rgb(233, 140, 140);
+}
 
 
 button:hover{
@@ -136,7 +171,7 @@ table {
     width: 100%;
 }
 
-th{background-color: rgb(5,52,194,1);
+th{background-color: var(--tableHead);
     text-align: left;
     color: snow;
 }
@@ -148,7 +183,7 @@ border: 1px solid #ccc
 }
 
 td{
-    background-color: rgb(225, 248, 248);
+    background-color: var(--corTd);
     text-align: left;
 }
 
@@ -165,12 +200,34 @@ tr{
     
 }
 
-.darkmodetoggle{
+h2{
+    color: var(--hs);
+}
 
-    font-size: 15px;
-    position: absolute;
-    top: 10%;
-    left: 90%;
-    
+.light-theme{
+    --navBG: var(--azurekino);
+    --contentBG: var(--conteudoPaginaLight);
+    --fontColor: var(--black);
+    --botaoCor: var(--buttonColor);
+    --fonteLogo: var(--snowWhite);
+    --header: var(--cabecalho);
+    --botaoHoverLuz: var(--buttonHoverLight);
+    --hs: var(--black);
+    --tableHead: var(--normalBlueTable);
+    --corLabel: var(--corLabelLight);
+    --corTd: var(--corTdLight);
+}
 
+.dark-theme{
+    --navBG: var(--richBlackForeground);
+    --contentBG: var(--conteudoPaginaDark);
+    --fontColor: var(--black);
+    --botaoCor: var(--buttonColorDark);
+    --fonteLogo: var(--snowWhite);
+    --header: var(--deepBlue);
+    --botaoHoverLuz: var(--buttonHoverDark);
+    --hs: var(--snowWhite);
+    --tableHead: var(--kinoDeepBlue);
+    --corLabel: var(--corLabelDark);
+    --corTd: var(--corTdDark);
 }
