@@ -1,3 +1,4 @@
+//Código para mascarar o . no input do formulario de altura.
 function doFormat(x, pattern, mask) {
     var strippedValue = x.replace(/[^0-9]/g, "");
     var chars = strippedValue.split('');
