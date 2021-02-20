@@ -2,7 +2,7 @@
 
 // calcularIMC.addEventListener("click", function (event) {
 
-//     event.preventDefault();
+//event.preventDefault();
 
     function calcularTodosIMCS() {
         //Pega o dado de todas as pessoas a serem cadastradas
